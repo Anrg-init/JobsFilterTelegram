@@ -1,0 +1,23 @@
+[project]
+name = "tghack"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "anrg-init", email = "electronicdm565@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.33.0",
+    "python-dotenv>=1.2.4",
+    "python-telegram-bot>=22.8",
+    "requests>=2.34.2",
+    "telethon>=1.45.0",
+]
+
+[project.scripts]
+tghack = "tghack:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
